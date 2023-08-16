@@ -42,12 +42,29 @@ document.getElementById('color-picker-box').addEventListener('input', function (
 });
 
 
-document.getElementById('UperCaseTextEditor').addEventListener('click', function () {
-    const textEditorBox = document.getElementById('text-editor-box');
-    textEditorBox.style.textTransform = "uppercase";
-});
-document.getElementById('LowerCaseTextEditor').addEventListener('click', function () {
-    const textEditorBox = document.getElementById('text-editor-box');
-    textEditorBox.style.textTransform = 'uppercase';
+// document.getElementById('UperCaseTextEditor').addEventListener('click', function () {
+//     const textEditorBox = document.getElementById('text-editor-box');
+//     textEditorBox.style.textTransform = "uppercase";
+// });
+// document.getElementById('LowerCaseTextEditor').addEventListener('click', function () {
+//     const textEditorBox = document.getElementById('text-editor-box');
+//     textEditorBox.style.textTransform = 'uppercase';
 
-});
+// });
+
+
+// comment section 
+
+
+document.getElementById('submit-btn').addEventListener('click',function () {
+    const getValueEditor = document.getElementById('text-eidtor-box');
+    const getCommetArea = document.getElementById('Comment-box');
+    const getValueFormEditor = getValueEditor.value;
+    const h2 = document.createElement('h2');
+    h2.style.fontSize = '16px';
+    h2.style.textTransform = 'capitalize';
+    h2.style.marginTop = '6px';
+    h2.innerText = getValueFormEditor;
+    getCommetArea.appendChild(h2);
+    
+})
